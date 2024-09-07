@@ -1,6 +1,6 @@
 const knex = require("../../database/connection");
 
-const deliveryStats = async (req, res) => {
+const monthlyStats = async (req, res) => {
   try {
     const { year, month } = req.query;
 
@@ -23,4 +23,4 @@ const deliveryStats = async (req, res) => {
   }
 };
 
-module.exports = deliveryStats;
+module.exports = monthlyStats;
